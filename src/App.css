@@ -121,3 +121,224 @@
   color: #64748b;
   padding: 16px;
 }
+
+/* ───────── Proyecto final ───────── */
+
+/* F3 — Ordenar por */
+.orden {
+  margin-top: 16px;
+}
+
+/* F1 / F3 — tarjeta clicable y tarjeta seleccionada */
+.tarjeta {
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.tarjeta:hover {
+  border-color: #94a3b8;
+}
+
+.tarjeta.seleccionada {
+  border: 2px solid #0ea5e9;
+  background: #f0f9ff;
+}
+
+.btn-ver {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.seleccionada .btn-ver {
+  border-color: #0ea5e9;
+  background: #0ea5e9;
+  color: #ffffff;
+}
+
+/* F1 — formulario de reserva */
+.formulario {
+  max-width: 520px;
+  margin: 0 auto 24px;
+  padding: 24px;
+  background: #ffffff;
+  border: 2px solid #0ea5e9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formulario h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.detalle {
+  list-style: none;
+  margin: 0;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.campo input {
+  margin-top: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.etiqueta {
+  font-weight: 600;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contador button {
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.contador button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.clases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.clases legend {
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.clases label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.clases small {
+  color: #64748b;
+}
+
+.total {
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 1.1rem;
+}
+
+.total strong {
+  color: #0f766e;
+}
+
+.btn-primario {
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #0ea5e9;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-primario:hover:not(:disabled) {
+  background: #0284c7;
+}
+
+.btn-primario:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* F2 — Mis reservas */
+.reservas {
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+
+.reservas h2 {
+  font-size: 1.1rem;
+}
+
+.reservas ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.reserva {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #6366f1;
+  border-radius: 10px;
+}
+
+.reserva small {
+  display: block;
+  color: #64748b;
+}
+
+.reserva b {
+  white-space: nowrap;
+  color: #0f766e;
+}
+
+.btn-eliminar {
+  padding: 6px 10px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background: #fee2e2;
+}
+
+.vacio {
+  padding: 12px;
+  text-align: center;
+  color: #64748b;
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+}
